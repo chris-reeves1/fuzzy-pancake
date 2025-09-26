@@ -10,7 +10,7 @@ pipeline{
             //input(proceed yes, no)
             // error handling
             steps{
-                sh "mkdir ~/jenkins-test"
+                sh "mkdir ~/jenkins-test || true"
             }
             //post actions (always, on failure, on skipped - archiving, clean ups, emails)
         }
@@ -23,3 +23,4 @@ pipeline{
     //post actions{}
 
 }
+
