@@ -16,9 +16,10 @@ pipeline{
         }
         stage("Add a file"){
             steps{
-                sh "touch ~/jenkins/test/file1.txt"
+                sh "touch ~/jenkins-test/file1.txt"
             }
         }
     }
     //post actions{}
+
 }
